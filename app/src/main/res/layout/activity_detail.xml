@@ -59,7 +59,6 @@
                 android:layout_height="@dimen/main_image_height"
                 android:layout_marginTop="@dimen/m_32"
                 android:scaleType="centerCrop"
-                android:src="@drawable/main_image_1"
                 android:contentDescription="@string/img_loft_desc"
                 />
 

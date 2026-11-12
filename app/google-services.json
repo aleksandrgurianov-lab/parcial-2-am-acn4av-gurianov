@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "927871961385",
+    "project_id": "argenbooking",
+    "storage_bucket": "argenbooking.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927871961385:android:7e3ce0ecb4d3d1c3c58f38",
+        "android_client_info": {
+          "package_name": "com.example.argenbooking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAOSxHFMOCT4vbeUSVMUjmX_-gvkgoiMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
