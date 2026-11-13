@@ -25,9 +25,29 @@
     <string name="total_text">$130 x 7 noches</string>
     <string name="habitacion_estado">DISPONIBLE</string>
 
-    <string name="logo_desc">Logotipo</string>
+
     <string name="adm_desc">administrador</string>
     <string name="img_loft_desc">habitacion</string>
     <string name="noche_def">7</string>
+    <string name="welcome_label">Bienvenido,</string>
+    <string name="btn_logout">Salir</string>
+    <string name="logo_desc">Logo ArgenBooking</string>
+
+    <string name="curso_loading">Cotización USD (API): Cargando...</string>
+    <string name="hoteles_disponibles">Alojamientos Disponibles</string>
+    <string name="hotel_cat_descr">Palermo Soho, Buenos Aires • 2 personas</string>
+    <string name="hotel_cat_precio">$130 USD / noche</string>
+
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="btn_login">Ingresar</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="pass">Contraseña</string>
+    <string name="btn_register">Registrarse</string>
+    <string name="link_crear">¿No tienes cuenta? Regístrate aquí</string>
+    <string name="crear_subtitle">Crear Nueva Cuenta</string>
+    <string name="crear_nobmbre">Nombre completo</string>
+    <string name="pass_helper">Contraseña (mín. 6 caracteres)</string>
+    <string name="otras_login">¿Ya tienes cuenta? Inicia sesión</string>
+
 
 </resources>

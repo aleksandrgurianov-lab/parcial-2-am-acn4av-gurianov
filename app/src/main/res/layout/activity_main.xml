@@ -2,117 +2,79 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#121212"
+    android:background="@color/bg_dark"
     android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="@dimen/m_18">
 
-        <!-- Шапка: Профиль и Кнопка Выхода -->
+        <include layout="@layout/layout_header" />
+
+        <!-- API curso de cambio -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingBottom="16dp">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Bienvenido,"
-                    android:textColor="#888888"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:id="@+id/tvUserEmail"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="cargando..."
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/btnLogout"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cerrar Sesión"
-                android:textColor="#FF5722" />
-        </LinearLayout>
-
-        <!-- Информационный блок API: Курс доллара -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:background="#1E1E1E"
+            android:layout_marginBottom="@dimen/pt_default"
+            android:background="@color/bg_curso"
             android:orientation="vertical"
-            android:padding="12dp">
+            android:padding="@dimen/p_sides">
 
             <TextView
                 android:id="@+id/tvApiStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cotización USD (API): Cargando..."
-                android:textColor="#FF9800"
-                android:textSize="14sp" />
+                android:text="@string/curso_loading"
+                android:textColor="@color/color_curso"
+                android:textSize="@dimen/text_size_body" />
         </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="Alojamientos Disponibles"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
+            android:layout_marginBottom="@dimen/m_18"
+            android:text="@string/hoteles_disponibles"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_subtitle_2"
             android:textStyle="bold" />
 
-        <!-- Карточка 1: Palermo Luxury Loft -->
+        <!-- Variantes -->
         <LinearLayout
             android:id="@+id/cardPalermoLoft"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="#1E1E1E"
+            android:layout_marginBottom="@dimen/m_18"
+            android:background="@color/bg_curso"
             android:clickable="true"
             android:focusable="true"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="@dimen/m_18">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Palermo Luxury Loft"
-                android:textColor="#FF5722"
-                android:textSize="18sp"
+                android:text="@string/loft_title"
+                android:textColor="@color/orange_premium"
+                android:textSize="@dimen/text_size_subtitle"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Palermo Soho, Buenos Aires • 2 personas"
-                android:textColor="#CCCCCC"
-                android:textSize="14sp" />
+                android:layout_marginTop="@dimen/pt_default"
+                android:text="@string/hotel_cat_descr"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_body" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="$120 USD / noche"
-                android:textColor="#4CAF50"
-                android:textSize="16sp"
+                android:layout_marginTop="@dimen/m_8"
+                android:text="@string/hotel_cat_precio"
+                android:textColor="@color/accent"
+                android:textSize="@dimen/text_size_subtitle"
                 android:textStyle="bold" />
         </LinearLayout>
 

@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#121212"
+    android:background="@color/bg_dark"
     android:fillViewport="true">
 
     <LinearLayout
@@ -10,64 +10,64 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="@dimen/pt_default">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ArgenBooking"
-            android:textColor="#FF5722"
-            android:textSize="36sp"
+            android:text="@string/app_name"
+            android:textColor="@color/orange_premium"
+            android:textSize="@dimen/text_size_title"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
-            android:text="Iniciar Sesión"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+            android:layout_marginBottom="@dimen/m_32"
+            android:text="@string/login_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_subtitle" />
 
         <EditText
             android:id="@+id/etLoginEmail"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginBottom="16dp"
-            android:background="#1E1E1E"
-            android:hint="Correo electrónico"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginBottom="@dimen/m_18"
+            android:background="@color/input"
+            android:hint="@string/correo"
             android:inputType="textEmailAddress"
-            android:padding="12dp"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#888888" />
+            android:padding="@dimen/p_sides"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_secondary" />
 
         <EditText
             android:id="@+id/etLoginPassword"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginBottom="24dp"
-            android:background="#1E1E1E"
-            android:hint="Contraseña"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginBottom="@dimen/pt_default"
+            android:background="@color/input"
+            android:hint="@string/pass"
             android:inputType="textPassword"
-            android:padding="12dp"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#888888" />
+            android:padding="@dimen/p_sides"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_secondary" />
 
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:backgroundTint="#FF5722"
-            android:text="Ingresar"
-            android:textColor="#FFFFFF" />
+            android:layout_height="@dimen/input_height"
+            android:backgroundTint="@color/orange_premium"
+            android:text="@string/btn_login"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/btnGoToRegister"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="¿No tienes cuenta? Regístrate aquí"
-            android:textColor="#FF9800" />
+            android:layout_marginTop="@dimen/m_18"
+            android:text="@string/link_crear"
+            android:textColor="@color/color_curso" />
 
     </LinearLayout>
 </ScrollView>

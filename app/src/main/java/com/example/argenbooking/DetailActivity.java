@@ -56,6 +56,15 @@ public class DetailActivity extends AppCompatActivity {
             priceNight = getIntent().getIntExtra("PRICE_PER_NIGHT", 120);
         }
 
+        Button btnLogout = findViewById(R.id.btnLogout);
+        TextView tvHeaderSubtitle = findViewById(R.id.tvHeaderSubtitle);
+        if(btnLogout != null){
+            btnLogout.setVisibility(View.GONE);
+        }
+        if(tvHeaderSubtitle != null){
+            tvHeaderSubtitle.setText("Buenos Aires, Argentina");
+        }
+
         // return a MainActivity
         TextView txtBreadcrumbs = findViewById(R.id.txtBreadcrumbs);
         if (txtBreadcrumbs != null) {

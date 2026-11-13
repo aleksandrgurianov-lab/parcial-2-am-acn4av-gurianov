@@ -7,4 +7,9 @@
     <color name="text_gray">#6C6661</color>
     <color name="orange_premium">#D36B27</color>
     <color name="card_bg">#211F1D</color>
+    <color name="text_secondary">#888888</color>
+    <color name="bg_curso">#1E1E1E</color>
+    <color name="color_curso">#FF9800</color>
+    <color name="accent">#4CAF50</color>
+    <color name="input">#1E1E1E</color>
 </resources>
